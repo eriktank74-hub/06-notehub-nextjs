@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../app/notes/loading.tsx"],"sourcesContent":["'use client'\n\nconst Loading = () => {\n    return (\n        <p>Loading, please wait...</p>\n    )\n};\n\nexport default Loading;"],"names":["Loading"],"mappings":"yEAEgB,IAER,CAAA,EAAA,EAAA,GAAA,EAAC,IAAA,UAAE"}

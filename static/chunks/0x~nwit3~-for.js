@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,70782,e=>{"use strict";var o=e.i(43476);e.s(["default",0,({error:e})=>(console.log(e),(0,o.jsxs)("p",{children:["Could not fetch the list of notes. ",e.message]}))])}]);

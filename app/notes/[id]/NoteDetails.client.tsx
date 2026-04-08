@@ -12,6 +12,7 @@ const NoteDetails = () => {
     queryKey: ["notesDetails", id],
     queryFn: () => fetchNoteById(id as string),
     placeholderData: (prev) => prev,
+    refetchOnMount: false
   });
 
 

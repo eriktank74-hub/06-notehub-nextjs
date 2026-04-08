@@ -5,16 +5,22 @@ import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { fetchNoteById } from "@/lib/api";
 
+
 const NoteDetails = () => {
   const {id} = useParams();
 
-  const { data } = useQuery({
+  const { data, isError, isLoading } = useQuery({
     queryKey: ["notesDetails", id],
     queryFn: () => fetchNoteById(id as string),
     placeholderData: (prev) => prev,
     refetchOnMount: false
   });
-
+if (isLoading){
+    return <p>Loading...</p>
+}
+if (isError){
+    return <p>Something goes wrong</p>
+}
 
   return (
     <div className={css.container}>
